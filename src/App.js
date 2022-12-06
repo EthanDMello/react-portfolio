@@ -1,11 +1,17 @@
 import React from "react";
-// TODO: Add a comment explaining what this import statement is doing
 import Header from "./components/Header";
-import "./App.ccs";
+// import Navigation from "./components/Navigation";
+import Footer from "./components/Footer";
+import Project from "./components/Project";
+// import "./App.ccs";
 
-// TODO: Add a comment explaining the purpose of the App component
 function App() {
-  return <Header />;
+  return (
+    <>
+      <Header />
+      <Footer />
+    </>
+  );
 }
 
 export default App;
