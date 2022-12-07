@@ -1,15 +1,21 @@
 import React from "react";
 import Header from "./components/Header";
-// import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
-import Project from "./components/Project";
+import AboutMe from "./pages/AboutMe";
+
 import "./App.css";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <>
-      <Header />
-      <Footer />
+      <Router>
+        <Header />
+        <Routes>
+          <Route path="/" element={<AboutMe />} />
+        </Routes>
+        <Footer />
+      </Router>
     </>
   );
 }
