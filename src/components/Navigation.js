@@ -6,13 +6,13 @@ function Navigation() {
       <nav>
         {/* <!-- Navigation section --> */}
         <div className="links">
-          <a className="navLinks" href="/aboutMe">
+          <a className="navLinks" href={process.env.PUBLIC_URL + "/aboutMe"}>
             About Me
           </a>
-          <a className="navLinks" href="/Projects">
+          <a className="navLinks" href={process.env.PUBLIC_URL + "/Projects"}>
             My Projects
           </a>
-          <a className="navLinks" href="/contactMe">
+          <a className="navLinks" href={process.env.PUBLIC_URL + "/contactMe"}>
             Contact Me
           </a>
         </div>
