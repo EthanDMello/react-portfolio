@@ -74,6 +74,9 @@ main {
   border-left: 3px solid var(--grey);
   border-bottom: 3px solid var(--grey);
   padding-top: 30px;
+  min-height: 85vh;
+  display: flex;
+  flex-direction: column;
 }
 
 /*                About me */
@@ -278,4 +281,5 @@ footer {
   align-items: center;
   background-color: var(--tan);
   height: 40px;
+  margin-top: auto;
 }
