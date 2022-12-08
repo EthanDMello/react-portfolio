@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Navigation() {
   return (
@@ -6,15 +7,15 @@ function Navigation() {
       <nav>
         {/* <!-- Navigation section --> */}
         <div className="links">
-          <a className="navLinks" href={process.env.PUBLIC_URL + "/aboutMe"}>
+          <Link className="navLinks" to="/aboutMe">
             About Me
-          </a>
-          <a className="navLinks" href={process.env.PUBLIC_URL + "/Projects"}>
+          </Link>
+          <Link className="navLinks" to="/Projects">
             My Projects
-          </a>
-          <a className="navLinks" href={process.env.PUBLIC_URL + "/contactMe"}>
+          </Link>
+          <Link className="navLinks" to="/contactMe">
             Contact Me
-          </a>
+          </Link>
         </div>
       </nav>
     </>
